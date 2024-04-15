@@ -7,10 +7,7 @@ function myMenuFunction(){
     } else {
       menuBtn.className = "nav-menu";
     }
-  }
-
-/* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
-  window.onscroll = function() {headerShadow()};
+  }  window.onscroll = function() {headerShadow()};
 
   function headerShadow() {
     const navHeader =document.getElementById("header");
@@ -29,6 +26,9 @@ function myMenuFunction(){
 
     }
   }
+
+/* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
+
 
 
 /* ----- TYPING EFFECT ----- */
@@ -112,6 +112,18 @@ function scrollActive() {
 
     }
   })
+}
+
+function redirectToLinkedin() {
+  window.open('https://www.linkedin.com/in/ken-castro-18040b297/', '_blank');
+}
+
+function redirectToGitHub() {
+  window.open('https://github.com/Kencastr0', '_blank');
+}
+
+function redirectToBehance() {
+  window.open('https://www.behance.net/alexcastrodsg', '_blank');
 }
 
 function redirectToHogenco() {

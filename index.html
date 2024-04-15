@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- --------- UNICONS ---------- -->
     <link
@@ -23,7 +24,6 @@
     <title>Portfolio Ken Castro</title>
   </head>
   <body>
-    <div class="container">
       <!-- --------------- HEADER --------------- -->
       <nav id="header">
         <div class="nav-logo">
@@ -47,13 +47,10 @@
               <a href="#contact" class="nav-link">Contact</a>
               <div class="circle"></div>
             </li>
+            
           </ul>
         </div>
-        <div class="nav-button">
-          <button class="btn">
-            Download CV <i class="uil uil-file-alt"></i>
-          </button>
-        </div>
+        
         <div class="nav-menu-btn">
           <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
@@ -75,15 +72,20 @@
               </p>
             </div>
             <div class="featured-text-btn">
-              <button class="btn blue-btn">Hire Me</button>
-              <button class="btn">
-                Download CV <i class="uil uil-file-alt"></i>
+              <button class="btn">Hire Me</button>
+              <button class="btn">Download CV <i class="uil uil-file-alt"></i>
               </button>
             </div>
             <div class="social_icons">
-              <div class="icon"><i class="uil uil-linkedin"></i></div>
-              <div class="icon"><i class="uil uil-github"></i></div>
-              <div class="icon"><i class="uil uil-behance"></i></div>
+              <div class="icon">
+                <i class="uil uil-linkedin" onclick="redirectToLinkedin()"></i>
+              </div>
+              <div class="icon">
+                <i class="uil uil-github" onclick="redirectToGitHub()"></i>
+              </div>
+              <div class="icon">
+                <i class="uil uil-behance" onclick="redirectToBehance()"></i>
+              </div>
             </div>
           </div>
           <div class="featured-image">
@@ -107,11 +109,7 @@
                   design skills, I aim to craft engaging digital experiences
                   that leave a lasting impression.
                 </p>
-                <div class="about-btn">
-                  <button class="btn">
-                    Download CV <i class="uil uil-import"></i>
-                  </button>
-                </div>
+
               </div>
             </div>
             <div class="col">
@@ -205,7 +203,7 @@
                   <input type="text" class="input-field" placeholder="Email" />
                 </div>
                 <div class="text-area">
-                  <textarea placeholder="Message"></textarea>
+                  <textarea class="textArea" placeholder="Message"></textarea>
                 </div>
                 <div class="form-button">
                   <button class="btn">
@@ -240,9 +238,9 @@
           </ul>
         </div>
         <div class="footer-social-icons">
-          <div class="icon"><i class="uil uil-linkedin"></i></div>
-          <div class="icon"><i class="uil uil-github"></i></div>
-          <div class="icon"><i class="uil uil-behance"></i></div>
+          <div class="icon"><i class="uil uil-linkedin" onclick="redirectToLinkedin()"></i></div>
+          <div class="icon"><i class="uil uil-github" onclick="redirectToGitHub()"></i></div>
+          <div class="icon"><i class="uil uil-behance" onclick="redirectToBehance()"></i></div>
         </div>
         <div class="bottom-footer">
           <p>
