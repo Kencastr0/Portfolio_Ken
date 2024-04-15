@@ -565,6 +565,7 @@ footer {
     font-size: 25px;
     background-color: #2C0C48;
     opacity: 90%;
+    backdrop-filter: blur(5px);
   }
   .nav_menu_list {
     flex-direction: column;
