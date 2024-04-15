@@ -138,6 +138,21 @@ function redirectToHogencoUI() {
   window.open('https://www.behance.net/gallery/190595809/Hogenco-UI-Design', '_blank');
 }
 
+function scrollToContact() {
+  // Obtiene la primera sección con la clase 'seccionDestino'
+  var sectionDestino = document.querySelector('#contact');
+
+  if (sectionDestino) {
+    // Obtiene la posición vertical de la sección destino
+    var offsetTop = sectionDestino.offsetTop;
+
+    // Desplaza la página hasta la sección destino
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth' // Hace que el desplazamiento sea suave
+    });
+  }
+}
 
 
 window.addEventListener('scroll', scrollActive)
